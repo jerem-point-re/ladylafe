@@ -1,0 +1,304 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080710 !important;
+}
+
+/* NAVBAR */
+
+.nav {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    margin: 32px;
+    width: 100vw;
+    vertical-align: middle;
+
+    >.logo a img {
+        border-radius: 8px;
+        height: 48px;
+        width: 48px;
+    }
+
+    >.logoUser {
+        position: relative;
+        left: -78px;
+
+        >a img {
+            height: 48px;
+            width: 48px;
+            border-radius: 8px;
+        }
+    }
+}
+
+.navLinks ul {
+    align-items: center;
+    display: flex;
+    gap: 1em;
+    margin-bottom: 0;
+}
+
+.navLinks ul li {
+    background: #f09819;
+    border-radius: 5px;
+    list-style: none;
+    padding: .5em;
+
+    &:last-child {
+        margin-right: 80px;
+    }
+
+    >a {
+        color: #FFF;
+        text-decoration: none;
+    }
+}
+
+.badge {
+    color: var(--primary-color);
+    position: absolute;
+    right: 8px;
+    top: 150px;
+    vertical-align: middle;
+
+    .comments {
+        /* background: var(--bg-dark); */
+        font-size: 9px;
+        position: absolute;
+        left: 19px;
+        top: 13px;
+    }
+}
+
+/* HOME PAGE */
+
+.home_main {
+    color: #FFF;
+    padding: 32px;
+
+    >h1 {
+        text-align: center;
+    }
+}
+
+.homeButton {
+    margin: 1.3em 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.ionIcons {
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+    >div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        line-height: 25px;
+        text-align: center;
+        font-size: 10px;
+
+        &:hover {
+            cursor: pointer;
+            color: #f09819;
+            transform: scale(1.3);
+            transition: all 0.3s ease-in-out;
+            border-radius: 50%;
+            border: #ff512f 3px solid;
+        }
+
+        >ion-icon {
+            vertical-align: middle;
+            position: relative;
+            top: 5px;
+            left: -6px;
+        }
+    }
+}
+
+/* LOG AND ADD PAGES */
+
+.log_background,
+.add_background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.log_background .log_shape,
+.add_background .add_shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.log_shape:first-child,
+.add_shape:first-child {
+    background: linear-gradient(#1845ad, #23a2f6);
+    left: -80px;
+    top: -80px;
+}
+
+.log_shape:last-child,
+.add_shape:last-child {
+    background: linear-gradient(to right,
+            #ff512f,
+            #f09819);
+    right: -30px;
+    bottom: -80px;
+}
+
+.log_home,
+.add_home {
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #222;
+    height: 32px;
+    left: 8px;
+    position: absolute;
+    top: 8px;
+    width: 32px;
+
+    >a ion-icon {
+        position: relative;
+        top: 7.5px;
+        left: 7.5px;
+        font-size: large;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.log_form,
+.add_form {
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+.log_form *,
+.add_form * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.log_form h3,
+.add_form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.choices {
+    margin: 16px 0 0 72px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    >span {
+        display: block;
+    }
+
+    >p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.myText {
+    display: block;
+    /* height: 50px; */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 32px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+.log_form .button,
+.add_form .button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #222;
+    /* color: #080710; */
+    color: #ccc;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add_form .button {
+    margin-top: 32px;
+}
+
+.log_forgot,
+.add_forgot {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* POST CARD */
+
+.card_background {
+    width: 200px;
+    height: 300px;
+}
