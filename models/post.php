@@ -30,4 +30,14 @@ function getPosts() {
     return $posts;
 }
 
+function getPost($id) {
+    global $pdo;
+    $query = $pdo->prepare("SELECT * FROM posts WHERE id = :i");
+    $query->execute([
+        "i" => $id
+    ]);
+    $post = $query->fetchAll();
+    return $post;
+}
+
 ?>

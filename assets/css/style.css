@@ -305,3 +305,13 @@ input {
     width: 200px;
     height: 300px;
 }
+
+.commentButton {
+    /* color: #080710; */
+    color: #ccc;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}

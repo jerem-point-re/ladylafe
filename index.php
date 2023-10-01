@@ -17,6 +17,15 @@ if (isset($_GET['p'])) {
             createKomeraz();
             break;
 
+        case 'unKomeraz':
+            if (isset($_GET['id'])) {
+                require("controllers/post.php");
+                getKomeraz($_GET['id']);
+            } else {
+                header("Location: $baseUrl");
+            }
+            break;
+
         case 'login':
             require('controllers/auth.php');
             showLogin();

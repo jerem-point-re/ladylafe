@@ -1,4 +1,6 @@
-<?php $title = "Actus"; ?>
+<?php $title = "Actus";
+global $baseUrl; 
+?>
 
 <?php ob_start(); ?>
 
@@ -31,7 +33,7 @@
                                         </p>
                                     </div>
                                     <span>
-                                        <a href="index.php?p=post&id=<?= $posts[$i]['id'] ?>"
+                                        <a href="<?= $baseUrl ?>?p=unKomeraz&id=<?= $posts[$i]['id'] ?>"
                                             class="btn btn-light w-100 homeButton">Lire le bann' coms</a>
                                     </span>
                                     <div class="card-footer">

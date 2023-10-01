@@ -24,7 +24,7 @@
     <?php if ($title !== "Connexion" && $title !== "Inscription") { ?>
         <div class="nav">
             <div class="logo">
-                <a href="#">
+                <a href="#" title="LadyLafé">
                     <img src="https://via.placeholder.com/120x120/ff512f/FFF?text=L" alt="">
                 </a>
             </div>
@@ -50,7 +50,7 @@
             </div>
             <?php if ($_SESSION) { ?>
                 <div class="logoUser">
-                    <a href="#">
+                    <a href="#" title="<?= $_SESSION["user"]["username"]; ?>">
                         <img src="https://via.placeholder.com/120x120/ff512f/FFF?text=<?= substr($_SESSION["user"]["username"], 0, 1); ?>"
                             alt="First letter of the username (in $_SESSION)">
                     </a>
