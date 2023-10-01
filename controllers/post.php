@@ -20,11 +20,13 @@ function createKomeraz()
     }
 }
 
-function showKomerazes()
+function getKomerazes()
 {
     require('models/post.php');
     $posts = getPosts();
     require("templates/home.php");
 }
+
+
 
 ?>

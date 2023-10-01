@@ -3,7 +3,7 @@
 session_start();
 global $baseUrl;
 
-$baseUrl = "http://localhost/etiennev/ladylafe/";
+$baseUrl = "http://localhost/etiennev/ladylafe1/";
 
 $GLOBALS['logged'] = $_SESSION && $_SESSION['user'];
 
@@ -34,10 +34,10 @@ if (isset($_GET['p'])) {
 
         default:
             require('controllers/post.php');
-            showKomerazes();
+            getKomerazes();
             break;
     }
 } else {
     require('controllers/post.php');
-    showKomerazes();
+    getKomerazes();
 }
