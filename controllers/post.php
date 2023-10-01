@@ -45,7 +45,8 @@ function getKomeraz($id)
         $post = $post[0];
         require("templates/unKomeraz.php");
     } else {
-        echo "Uh-Oooh";
+        // echo "Uh-Oooh";
+        header("Location: " . $baseUrl . "?p=home");
     }
 }
 

@@ -3,7 +3,7 @@
 session_start();
 global $baseUrl;
 
-$baseUrl = "http://localhost/etiennev/ladylafe1/";
+$baseUrl = "http://localhost/etiennev/ladylafe/";
 
 $GLOBALS['logged'] = $_SESSION && $_SESSION['user'];
 

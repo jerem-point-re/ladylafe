@@ -7,7 +7,7 @@ global $baseUrl;
 <!-- CODE HERE -->
 <?php $x = 0; { ?>
     <div class="container my-5">
-        <div class="col-sm-12 mb-5">
+        <div class="col-sm-6 offset-sm-3 mb-5">
             <div class="card">
                 <div class="card-body bg-dark text-white">
                     <div class="img_box mb-4">
@@ -49,7 +49,7 @@ global $baseUrl;
                                                 <input type="text" class="form-control" name="comment">
                                             </div>
                                             <input type="submit" value="Anvoy a ou"
-                                                class="w-50 btn btn-primary m-3 commentButton">
+                                                class="w-50 btn btn-dark m-3 commentButton">
                                             </input>
                                         </form>
                                     </div>
