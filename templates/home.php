@@ -5,6 +5,7 @@ global $baseUrl;
 <?php ob_start(); ?>
 
 <!-- CODE HERE -->
+
 <div class="home_main">
     <h1>- Dernié potins pou ou
         <?php if ($_SESSION) {
@@ -18,7 +19,7 @@ global $baseUrl;
             <div class="row">
                 <?php for ($i = 0; $i < sizeof($posts); $i++) { ?>
                     <div class="col-sm-6 mb-5">
-                        <div class="card">
+                        <div class="card" id="glassmorphic-card">
                             <div class="card-body bg-dark text-white">
                                 <div class="img_box mb-4">
                                     <img src="https://picsum.photos/500/350?random=<?= $x++; ?>;" alt="Picture holder"

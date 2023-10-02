@@ -1,4 +1,4 @@
-<?php $title = "Koméraz";
+<?php $title = "Koméraz" . $_SESSION['username'];
 global $baseUrl;
 ?>
 
